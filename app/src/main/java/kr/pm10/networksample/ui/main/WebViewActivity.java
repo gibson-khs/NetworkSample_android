@@ -1,8 +1,6 @@
 package kr.pm10.networksample.ui.main;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -28,14 +26,6 @@ public class WebViewActivity extends BaseActivity {
         webView.getSettings().setUseWideViewPort(true);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(gitHubUrl);
-    }
-
-    private class WebViewClientClass extends WebViewClient {
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            super.onPageStarted(view, url, favicon);
-            Log.e("url : ", url);
-        }
     }
 
     @Override
