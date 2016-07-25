@@ -67,6 +67,7 @@ public class MainActivity extends BaseActivity {
                 },
                 throwable -> {
                     showErrorToast(throwable);
+                    setUserCard(null);
                     loadingEnd();
                 });
     }
@@ -75,6 +76,11 @@ public class MainActivity extends BaseActivity {
         if (userCardView == null) {
             userCardView = new UserCardView(this);
             containerView.addView(userCardView);
+        }
+        if (user == null) {
+            containerView.removeView(userCardView);
+            userCardView = null;
+            return;
         }
 
         userCardView.setData(user);
