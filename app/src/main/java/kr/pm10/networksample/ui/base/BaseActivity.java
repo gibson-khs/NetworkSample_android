@@ -26,7 +26,7 @@ public class BaseActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
     }
 
-    protected void loadingEnd() {
+    protected void loadingFinish() {
         progressBar.setVisibility(View.GONE);
     }
 }

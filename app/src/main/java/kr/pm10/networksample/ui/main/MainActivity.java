@@ -62,12 +62,12 @@ public class MainActivity extends BaseActivity {
         NetworkRequest.request(GitHubApi.getInstance().service().getUserInfomation(userId),
                 user -> {
                     setUserCard(user);
-                    loadingEnd();
+                    loadingFinish();
                 },
                 throwable -> {
                     showErrorToast(throwable);
                     setUserCard(null);
-                    loadingEnd();
+                    loadingFinish();
                 });
     }
 
