@@ -2,5 +2,5 @@
     <string name="app_name">NetworkSample</string>
     <string name="network_error">Network error.</string>
     <string name="network_error_not_exist">ID does not exist.</string>
-    <string name="main_search_text">Search github user</string>
+    <string name="main_search_text">Search GitHub User</string>
 </resources>

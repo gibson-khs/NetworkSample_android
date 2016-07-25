@@ -28,7 +28,6 @@ public class MainActivity extends BaseActivity {
     ProgressBar progressBar;
     @BindView(R.id.input_search_user)
     EditText inputSearchUser;
-
     UserCardView userCardView;
 
     private String userId;
@@ -82,7 +81,6 @@ public class MainActivity extends BaseActivity {
             userCardView = null;
             return;
         }
-
         userCardView.setData(user);
     }
 
